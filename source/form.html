@@ -39,50 +39,50 @@
         <p class="form__subtitle">Заполните анкету, и мы подберем
           программу питания для вашего кота</p>
         <form class="form__body" action="https:/echo.htmlacademy.ru/" method="post">
-          <fieldset class="form__group fieldgroup">
+          <fieldset class="form__group field-group">
             <legend class="visually-hidden">Данные кота</legend>
 
-            <ul class="fieldgroup__list">
-              <li class="fieldgroup__item">
+            <ul class="field-group__list">
+              <li class="field-group__item">
                 <label class="field">
                   <span class="field__caption">Имя:<sup>*</sup></span>
-                  <input class="fieldgroup__input" type="text" name="name" placeholder="Барсик">
+                  <input class="field-group__input" type="text" name="name" placeholder="Барсик">
                 </label>
               </li>
-              <li class="fieldgroup__item">
+              <li class="field-group__item">
                 <label class="field">
                   <span class="field__caption">Вес (кг):<sup>*</sup></span>
-                  <input class="fieldgroup__input" type="text" name="weight" placeholder="7">
+                  <input class="field-group__input" type="text" name="weight" placeholder="7">
                 </label>
               </li>
-              <li class="fieldgroup__item">
+              <li class="field-group__item">
                 <label class="field">
                   <span class="field__caption">Возраст (лет):<sup>*</sup></span>
-                  <input class="fieldgroup__input" type="text" name="age" placeholder="7">
+                  <input class="field-group__input" type="text" name="age" placeholder="7">
                 </label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="form__group fieldgroup">
+          <fieldset class="form__group field-group">
             <legend class="visually-hidden">Цель программы</legend>
 
-            <ul class="fieldgroup__list">
-              <li class="fieldgroup__item">
+            <ul class="field-group__list">
+              <li class="field-group__item">
                 <label class="control control--radio">
                   <input class="control__input  control__input--radio" type="radio" name="program" value="cut" checked>
                   <span class="control__caption">Похудение</span>
                 </label>
               </li>
 
-              <li class="fieldgroup__item">
+              <li class="field-group__item">
                 <label class="control control--radio">
                   <input class="control__input  control__input--radio" type="radio" name="program" value="bulk">
                   <span class="control__caption">Набор массы</span>
                 </label>
               </li>
 
-              <li class="fieldgroup__item">
+              <li class="field-group__item">
                 <label class="control">
                   <input class="control__input control__input--radio" type="radio" name="program" value="advice">
                   <span class="control__caption">Не знаю (Нужен ваш совет)</span>
@@ -91,19 +91,19 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form__group fieldgroup">
-            <legend class="fieldgroup__title">Контактные данные
+          <fieldset class="form__group field-group">
+            <legend class="field-group__title">Контактные данные
               (владельца кота)</legend>
 
-            <ul class="fieldgroup__list">
-              <li class="fieldgroup__item">
+            <ul class="field-group__list">
+              <li class="field-group__item">
                 <label class="field">
                   <span class="control__caption">E-mail:<sup>*</sup></span>
                   <input class="field__input field__input--email" type="email" name="email" placeholder="kuklachev@gmail.com">
                 </label>
               </li>
 
-              <li class="fieldgroup__item">
+              <li class="field-group__item">
                 <label class="field">
                   <span class="control__caption">Телефон:<sup>*</sup></span>
                   <input class="field__input field__input--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90">
@@ -112,39 +112,39 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form__group fieldgroup">
-            <legend class="fieldgroup__title">Комментарий</legend>
+          <div class="form__group field-group">
+            <label class="field-group__title" for="comment">Комментарий</label>
             <div class="field">
               <textarea class="" name="comment" id="comment" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
-          </fieldset>
+          </div>
 
-          <fieldset class="form__group fieldgroup">
-            <legend class="fieldgroup__title">Дополнительно</legend>
+          <fieldset class="form__group field-group">
+            <legend class="field-group__title">Дополнительно</legend>
 
-            <ul class="fieldgroup__list">
-              <li class="fieldgroup__item">
+            <ul class="field-group__list">
+              <li class="field-group__item">
                 <label class="control">
                   <input class="control__input control__input--checkbox" type="checkbox" name="sweetener">
                   <span class="control__caption">Сахарозаменитель</span>
                 </label>
               </li>
 
-              <li class="fieldgroup__item">
+              <li class="field-group__item">
                 <label class="control">
                   <input class="control__input control__input--checkbox" type="checkbox" name="water">
                   <span class="control__caption">Питьевая вода</span>
                 </label>
               </li>
 
-              <li class="fieldgroup__item">
+              <li class="field-group__item">
                 <label class="control">
                   <input class="control__input control__input--checkbox" type="checkbox" name="milk">
                   <span class="control__caption">Молоко</span>
                 </label>
               </li>
 
-              <li class="fieldgroup__item">
+              <li class="field-group__item">
                 <label class="control">
                   <input class="control__input control__input--checkbox" type="checkbox" name="vitamins">
                   <span class="control__caption">Витамины</span>
