@@ -1,0 +1,27 @@
+// .field
+
+.field__caption {
+  font-size: 16px;
+  line-height: 112%;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.field__input {
+  padding: 13px 13px 13px 15px;
+
+  font-family: 'Oswald', 'Arial', sans-serif;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 112%;
+    text-transform: uppercase;
+    color: #444444;
+  }
+}
+
+
+
+// .field__input--email
+
+// .field__input--tel

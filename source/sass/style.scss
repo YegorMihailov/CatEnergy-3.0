@@ -1,0 +1,66 @@
+img { max-width: 100% }
+a { text-decoration: none }
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldregular.woff2") format("woff2"),
+       url("../fonts/oswaldregular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"),
+       url("../fonts/oswaldmedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import './blocks/page.scss';
+@import './blocks/page-header.scss';
+@import './blocks/page-main.scss';
+@import './blocks/page-footer.scss';
+@import './blocks/additional-products.scss';
+@import './blocks/advantages.scss';
+@import './blocks/button.scss';
+@import './blocks/card.scss';
+@import './blocks/contacts.scss';
+@import './blocks/control.scss';
+@import './blocks/copyright.scss';
+@import './blocks/example.scss';
+@import './blocks/field-group.scss';
+@import './blocks/field.scss';
+@import './blocks/form.scss';
+@import './blocks/main-nav.scss';
+@import './blocks/nutrition-programs.scss';
+@import './blocks/offer.scss';
+@import './blocks/products.scss';
+@import './blocks/promo.scss';
+@import './blocks/show-more.scss';
+@import './blocks/social.scss';
+@import './blocks/switcher.scss';
+@import './blocks/title.scss';
+@import './blocks/wrapper.scss';
+@import './blocks/text';
