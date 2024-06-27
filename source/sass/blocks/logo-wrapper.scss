@@ -1,0 +1,9 @@
+.logo-wrapper {
+  @media (min-width: $tablet-width) {
+    width: 175px;
+  }
+
+  @media (min-width: $laptop-width) {
+    width: 202px;
+  }
+}

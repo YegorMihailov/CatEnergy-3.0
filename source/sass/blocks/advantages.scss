@@ -1,0 +1,41 @@
+// .advantages
+
+
+// .advantages__title
+
+
+.advantages__list {
+  padding: 0;
+
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    width: 630px;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 135px;
+    row-gap: 37px;
+  }
+
+  @media (min-width: $laptop-width) {
+    width: 1220px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 70px;
+  }
+}
+
+.advantages__item {
+  margin-bottom: 20px;
+}
+
+// .advantages__item--leaf
+
+// .advantages__item--tub
+
+// .advantages__item--eat
+
+// .advantages__item--alarm
