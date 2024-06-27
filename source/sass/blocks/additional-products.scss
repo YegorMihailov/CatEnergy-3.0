@@ -1,5 +1,13 @@
 // .additional-products
 
+.additional-products__wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+  }
+}
+
 .additional-products__title {
 
 }

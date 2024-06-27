@@ -15,6 +15,10 @@
     font-size: 20px;
     line-height: 120%;
   }
+
+  @media (min-width: $laptop-width) {
+    line-height: 105%;
+  }
 }
 
 .card__characteristics {
