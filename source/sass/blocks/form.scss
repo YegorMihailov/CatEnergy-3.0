@@ -16,12 +16,20 @@
 }
 
 .form__body {
-  
+  @media (min-width: $laptop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
 }
 
 // .form__group
 
-// .form__button
+.form__button {
+  @media (min-width: $laptop-width) {
+    grid-column: 1 / 2;
+  }
+}
 
 .form__explanation {
   display: block;
