@@ -1,9 +1,21 @@
 .field-group {
+  padding: 0;
   border: none;
 }
 
 .field-group__list {
+  padding: 0;
+
   list-style: none;
+
+  &--additional {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 80px;
+      row-gap: 32px;
+    }
+  }
 }
 
 // .field-group__item

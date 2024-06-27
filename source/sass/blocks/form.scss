@@ -8,15 +8,24 @@
   font-size: 14px;
   line-height: 129%;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 150%;
+  }
 }
 
-// .form__body
+.form__body {
+  
+}
 
 // .form__group
 
 // .form__button
 
 .form__explanation {
+  display: block;
+
   font-family: $additional-font;
   font-size: 14px;
   line-height: 114%;
