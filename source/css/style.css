@@ -44,8 +44,40 @@ a {
   color: #000;
 }
 
+.page-header {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .page-header__logo {
+    margin-right: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-header__main-logo {
+    margin: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo-wrapper {
+    width: 175px;
+  }
+}
+@media (min-width: 1440px) {
+  .logo-wrapper {
+    width: 202px;
+  }
+}
+
 .page-footer {
   background-color: #f2f2f2;
+}
+@media (min-width: 768px) {
+  .page-footer {
+    padding: 55px 30px;
+  }
 }
 
 .additional-products__list {
@@ -64,6 +96,33 @@ a {
   font-size: 14px;
   line-height: 100%;
   color: #444444;
+}
+
+.advantages__list {
+  padding: 0;
+  list-style: none;
+}
+@media (min-width: 768px) {
+  .advantages__list {
+    width: 630px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 135px;
+    row-gap: 37px;
+  }
+}
+@media (min-width: 1440px) {
+  .advantages__list {
+    width: 1220px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 70px;
+  }
+}
+
+.advantages__item {
+  margin-bottom: 20px;
 }
 
 .button {
@@ -104,12 +163,25 @@ a {
   text-transform: uppercase;
   color: #111;
 }
+@media (min-width: 768px) {
+  .contacts__title {
+    font-size: 20px;
+    line-height: 130%;
+  }
+}
 
 .contacts__address {
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 143%;
   color: #444444;
+}
+@media (min-width: 768px) {
+  .contacts__address {
+    font-size: 16px;
+    line-height: 125%;
+    text-align: right;
+  }
 }
 
 .control__caption {
@@ -132,16 +204,32 @@ a {
 .example {
   background-color: #eaeaea;
 }
+@media (min-width: 768px) {
+  .example {
+    padding: 20px 0;
+  }
+}
 
 .example__title {
   font-size: 24px;
   line-height: 100%;
+}
+@media (min-width: 768px) {
+  .example__title {
+    margin: 0;
+  }
 }
 
 .example__term {
   font-size: 24px;
   line-height: 100%;
   text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .example__term {
+    font-size: 30px;
+    line-height: 123%;
+  }
 }
 
 .example__definition {
@@ -152,6 +240,18 @@ a {
   font-size: 14px;
   line-height: 143%;
   text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .example__cost {
+    font-size: 20px;
+    line-height: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .example__images {
+    display: flex;
+  }
 }
 
 .field-group {
@@ -195,25 +295,78 @@ a {
 .main-nav {
   text-align: center;
 }
+@media (min-width: 1440px) {
+  .main-nav {
+    background-color: #68B738;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-nav__wrapper {
+    width: 440px;
+  }
+}
+@media (min-width: 1440px) {
+  .main-nav__wrapper {
+    width: 478px;
+  }
+}
 
 .main-nav__list {
+  padding: 0;
   font-weight: 500;
   font-size: 20px;
   line-height: 100%;
   text-transform: uppercase;
   list-style: none;
 }
+@media (min-width: 768px) {
+  .main-nav__list {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    margin-top: 18px;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 133%;
+  }
+}
+@media (min-width: 1440px) {
+  .main-nav__list {
+    font-size: 20px;
+  }
+}
 
 .main-nav__link {
   color: #000;
 }
+@media (min-width: 1440px) {
+  .main-nav__link {
+    color: #ffffff;
+  }
+}
 
 .nutrition-programs__list {
+  padding: 0;
   list-style: none;
+}
+@media (min-width: 1440px) {
+  .nutrition-programs__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
 }
 
 .nutrition-programs__item {
+  padding: 20px;
+  margin-bottom: 30px;
   background-color: #f2f2f2;
+}
+@media (min-width: 768px) {
+  .nutrition-programs__item {
+    padding: 50px;
+  }
 }
 
 .nutrition-programs__title {
@@ -221,7 +374,13 @@ a {
   font-size: 24px;
   line-height: 154%;
   text-transform: uppercase;
-  color: #000;
+  color: #000000;
+}
+@media (min-width: 768px) {
+  .nutrition-programs__title {
+    font-size: 36px;
+    line-height: 100%;
+  }
 }
 
 .nutrition-programs__description {
@@ -229,12 +388,24 @@ a {
   line-height: 129%;
   color: #444444;
 }
+@media (min-width: 768px) {
+  .nutrition-programs__description {
+    font-size: 16px;
+    line-height: 150%;
+    color: #000000;
+  }
+}
 
 .nutrition-programs__link {
   font-size: 16px;
   line-height: 100%;
   text-transform: uppercase;
-  color: #000;
+  color: #000000;
+}
+@media (min-width: 768px) {
+  .nutrition-programs__link {
+    font-size: 20px;
+  }
 }
 
 .offer {
@@ -256,22 +427,53 @@ a {
 }
 
 .promo {
+  padding: 27px 0;
   color: #ffffff;
   background-color: #68B738;
   background-image: url(../../img/cat-promo.jpg);
   text-align: center;
 }
+@media (min-width: 768px) {
+  .promo {
+    padding: 30px 0;
+  }
+}
+@media (min-width: 1440px) {
+  .promo {
+    text-align: left;
+  }
+}
 
 .promo__title {
+  margin: 0;
   font-size: 36px;
   font-weight: 400;
   line-height: 100%;
+}
+@media (min-width: 768px) {
+  .promo__title {
+    font-size: 60px;
+    color: #000000;
+  }
 }
 
 .promo__text {
   font-size: 14px;
   text-transform: uppercase;
   line-height: 100%;
+}
+@media (min-width: 768px) {
+  .promo__text {
+    font-size: 20px;
+    color: #000000;
+  }
+}
+
+@media (min-width: 768px) {
+  .promo__button {
+    font-size: 20px;
+    line-height: 100%;
+  }
 }
 
 .show-more__title {
@@ -303,20 +505,91 @@ a {
   background-color: transparent;
   cursor: pointer;
 }
+@media (min-width: 768px) {
+  .switcher__button {
+    font-size: 20px;
+  }
+}
 
 .title {
   font-weight: 400;
   font-size: 36px;
   line-height: 111%;
 }
+@media (min-width: 768px) {
+  .title {
+    font-size: 60px;
+    line-height: 100%;
+  }
+}
 
 .title--small {
   font-size: 24px;
+}
+
+.wrapper {
+  width: 280px;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .wrapper {
+    width: 708px;
+  }
+}
+@media (min-width: 1440px) {
+  .wrapper {
+    width: 1220px;
+  }
+}
+
+.wrapper--header {
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .wrapper--header {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .wrapper--example {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 193px;
+  }
+}
+
+.wrapper--contacts {
+  display: grid;
+  grid-template-columns: 139px 139px;
+}
+@media (min-width: 768px) {
+  .wrapper--contacts {
+    grid-template-columns: 172px 172px;
+    justify-content: space-between;
+    padding: 56px 70px;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper--footer {
+    display: grid;
+    grid-template-columns: 164px 1fr 164px;
+    justify-content: space-between;
+  }
 }
 
 .text {
   font-size: 14px;
   line-height: 129%;
   color: #444444;
+}
+@media (min-width: 768px) {
+  .text {
+    font-size: 16px;
+    line-height: 150%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

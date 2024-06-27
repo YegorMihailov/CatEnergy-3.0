@@ -1,0 +1,53 @@
+.wrapper {
+  width: 280px;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $laptop-width) {
+    width: 1220px;
+  }
+}
+
+.wrapper--header {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+.wrapper--advantages {
+
+}
+
+.wrapper--example {
+  @media (min-width: $laptop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 193px;
+  }
+}
+
+.wrapper--contacts {
+  display: grid;
+  grid-template-columns: 139px 139px;
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 172px 172px;
+    justify-content: space-between;
+
+    padding: 56px 70px;
+  }
+}
+
+.wrapper--footer {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 164px 1fr 164px;
+    justify-content: space-between;
+  }
+}

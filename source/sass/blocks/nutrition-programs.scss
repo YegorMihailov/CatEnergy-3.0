@@ -1,11 +1,26 @@
 // .nutrition-programs
 
 .nutrition-programs__list {
+  padding: 0;
+
   list-style: none;
+
+  @media (min-width: $laptop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
 }
 
 .nutrition-programs__item {
+  padding: 20px;
+  margin-bottom: 30px;
+
   background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px;
+  }
 }
 
 .nutrition-programs__title {
@@ -13,18 +28,33 @@
   font-size: 24px;
   line-height: 154%;
   text-transform: uppercase;
-  color: #000;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 100%;
+  }
 }
 
 .nutrition-programs__description {
   font-size: 14px;
   line-height: 129%;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 150%;
+    color: #000000;
+  }
 }
 
 .nutrition-programs__link {
   font-size: 16px;
   line-height: 100%;
   text-transform: uppercase;
-  color: #000;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }

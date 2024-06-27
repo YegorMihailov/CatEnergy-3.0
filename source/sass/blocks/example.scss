@@ -1,16 +1,29 @@
 .example {
   background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 0;
+  }
 }
 
 .example__title {
   font-size: 24px;
   line-height: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .example__term {
   font-size: 24px;
   line-height: 100%;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 123%;
+  }
 }
 
 
@@ -23,14 +36,25 @@
 
 .example__definition {
   text-transform: lowercase;
+
+
 }
 
 .example__cost {
   font-size: 14px;
   line-height: 143%;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 100%;
+  }
 }
 
-// .example__images
+.example__images {
+  @media (min-width: $laptop-width) {
+    display: flex;
+  }
+}
 
 // .example__switcher
