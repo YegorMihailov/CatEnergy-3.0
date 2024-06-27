@@ -81,6 +81,7 @@ a {
 }
 
 .additional-products__list {
+  padding: 0;
   list-style: none;
 }
 
@@ -91,11 +92,21 @@ a {
   text-transform: uppercase;
   color: #222222;
 }
+@media (min-width: 768px) {
+  .additional-products__item-title {
+    font-size: 20px;
+  }
+}
 
 .additional-products__characteristics {
   font-size: 14px;
   line-height: 100%;
   color: #444444;
+}
+@media (min-width: 768px) {
+  .additional-products__characteristics {
+    font-size: 16px;
+  }
 }
 
 .advantages__list {
@@ -135,6 +146,12 @@ a {
   border: none;
 }
 
+@media (min-width: 768px) {
+  .card {
+    background-color: #f2f2f2;
+  }
+}
+
 .card__title {
   font-weight: 400;
   font-size: 16px;
@@ -142,19 +159,27 @@ a {
   text-transform: uppercase;
   color: #222222;
 }
+@media (min-width: 768px) {
+  .card__title {
+    font-size: 20px;
+    line-height: 120%;
+  }
+}
 
 .card__characteristics {
   font-size: 12px;
   line-height: 133%;
   color: #444444;
 }
+@media (min-width: 768px) {
+  .card__characteristics {
+    font-size: 16px;
+    line-height: 100%;
+  }
+}
 
 .card__button {
   font-size: 16px;
-}
-
-.contacts--grey {
-  background-color: #f2f2f2;
 }
 
 .contacts__title {
@@ -423,7 +448,15 @@ a {
 }
 
 .products__list {
+  padding: 0;
   list-style: none;
+}
+@media (min-width: 768px) {
+  .products__list {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    gap: 60px;
+  }
 }
 
 .promo {
@@ -482,11 +515,23 @@ a {
   text-transform: uppercase;
   color: #111;
 }
+@media (min-width: 768px) {
+  .show-more__title {
+    font-size: 20px;
+    line-height: 110%;
+  }
+}
 
 .show-more__text {
   font-size: 12px;
   line-height: 133%;
   color: #444444;
+}
+@media (min-width: 768px) {
+  .show-more__text {
+    font-size: 16px;
+    line-height: 112%;
+  }
 }
 
 .show-more__button {
@@ -523,13 +568,22 @@ a {
   }
 }
 
-.title--small {
+.title__small {
   font-size: 24px;
+  line-height: 100%;
+}
+@media (min-width: 768px) {
+  .title__small {
+    font-size: 36px;
+  }
 }
 
 .wrapper {
   width: 280px;
   margin: auto;
+}
+.wrapper--grey {
+  background-color: #f2f2f2;
 }
 @media (min-width: 768px) {
   .wrapper {

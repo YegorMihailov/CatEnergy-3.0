@@ -1,3 +1,11 @@
 .products__list {
+  padding: 0;
+
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    gap: 60px;
+  }
 }
