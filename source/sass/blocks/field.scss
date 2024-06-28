@@ -5,6 +5,10 @@
   line-height: 112%;
   text-transform: uppercase;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .field__input {
@@ -17,7 +21,15 @@
     line-height: 112%;
     text-transform: uppercase;
     color: #444444;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+    }
   }
+
+  // &--comment {
+  //   display: block;
+  // }
 }
 
 

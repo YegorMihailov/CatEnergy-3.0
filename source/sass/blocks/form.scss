@@ -8,15 +8,32 @@
   font-size: 14px;
   line-height: 129%;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 150%;
+  }
 }
 
-// .form__body
+.form__body {
+  @media (min-width: $laptop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+}
 
 // .form__group
 
-// .form__button
+.form__button {
+  @media (min-width: $laptop-width) {
+    grid-column: 1 / 2;
+  }
+}
 
 .form__explanation {
+  display: block;
+
   font-family: $additional-font;
   font-size: 14px;
   line-height: 114%;

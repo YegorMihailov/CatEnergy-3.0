@@ -5,6 +5,10 @@
   background-image: url(../../img/cat-bag.jpg);
   background-color: #68B738;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 4 / 5;
+  }
 }
 
 .offer__text {
