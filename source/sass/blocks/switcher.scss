@@ -1,8 +1,37 @@
+.switcher {
+  width: 210px;
+  display: grid;
+  grid-template-columns: 49px 1fr 49px;
+  margin: 0 auto;
+}
 
+.switcher__toggle {
+  position: relative;
+  width: 86px;
+  height: 14px;
+  justify-self: center;
+  align-self: center;
 
-// .switcher
+  background-color: #fff;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    width: 36px;
+    height: 6px;
+
+    background-color: #68B738;
+    border-radius: 6px;
+  }
+}
 
 .switcher__button {
+  padding: 0;
+
   font-family: $main-font;
   font-weight: 400;
   font-size: 16px;
@@ -10,8 +39,17 @@
   text-transform: uppercase;
   color: #000000;
   border: none;
-  background-color: transparent;
+  border-bottom: 1px dotted #000000;
   cursor: pointer;
+  background-color: transparent;
+
+  &:hover {
+    border-bottom: 1px solid #000000;
+  }
+
+  &:active {
+    border-bottom: none;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

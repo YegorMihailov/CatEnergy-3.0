@@ -1,4 +1,6 @@
 .example {
+  padding-bottom: 40px;
+
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
@@ -7,6 +9,9 @@
 }
 
 .example__title {
+  margin-top: 0;
+  padding-top: 25px;
+
   font-size: 24px;
   line-height: 100%;
 
@@ -15,7 +20,19 @@
   }
 }
 
+.example__item-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 14px 8px;
+  padding-bottom: 0;
+
+  border: 1px solid #cdcdcd;
+  text-align: center;
+}
+
 .example__term {
+  padding-bottom: 12px;
+
   font-size: 24px;
   line-height: 100%;
   text-transform: uppercase;
@@ -28,22 +45,34 @@
 
 
 // .example__text {
-
 // }
 
 
-// .example__list
+.example__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 48px;
+}
 
 .example__definition {
+  width: 87px;
+  margin: 0 auto;
+  margin-bottom: -18px;
+  padding: 0 4px;
+  justify-self: center;
+
+  font-size: 12px;
+  font-family: $additional-font;
   text-transform: lowercase;
-
-
+  background-color: #eaeaea;
 }
 
 .example__cost {
   font-size: 14px;
   line-height: 143%;
   text-transform: uppercase;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -52,6 +81,7 @@
 }
 
 .example__images {
+  margin-bottom: 15px;
   @media (min-width: $laptop-width) {
     display: flex;
   }
