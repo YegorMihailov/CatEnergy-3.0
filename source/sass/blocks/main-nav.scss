@@ -3,10 +3,6 @@
 
   text-align: center;
 
-  @media (min-width: $laptop-width) {
-    background-color: #68B738;
-  }
-
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 174px 1fr;
@@ -14,6 +10,13 @@
     width: 708px;
     margin: 0 auto;
     margin-top: 7px;
+  }
+
+  @media (min-width: $laptop-width) {
+    grid-template-columns: 202px 1fr;
+    width: auto;
+    margin-top: 0;
+    padding: 0 110px;
   }
 }
 
@@ -55,7 +58,7 @@
   }
 
   @media (min-width: $laptop-width) {
-    width: 478px;
+    justify-self: end;
   }
 }
 
@@ -174,7 +177,7 @@
   @media (max-width: $mobile-width-only) {
     position: relative;
     display: block;
-    padding: 22px 20px 24px 20px;
+    padding: 22px 20px 24px;
   }
 }
 
@@ -196,6 +199,7 @@
     top: 62px;
 
     background-color: #fff;
+    z-index: 1;
   }
 }
 

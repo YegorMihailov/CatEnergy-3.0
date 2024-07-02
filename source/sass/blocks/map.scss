@@ -1,6 +1,6 @@
 .map {
   max-width: 1440px;
-  
+
   position:relative;
   overflow:hidden;
   margin: 0 auto;
@@ -12,5 +12,9 @@
     max-width: 1440px;
     height: 362px;
     margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      height: 400px;
+    }
   }
 }

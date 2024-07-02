@@ -24,6 +24,12 @@
     padding-right: 315px;
     padding-bottom: 55px;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 72px 43px;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+  }
 }
 
 .nutrition-programs__title {
@@ -61,6 +67,18 @@
       top: 24px;
       left: 395px;
     }
+
+    @media (min-width: $laptop-width) {
+      width: 100px;
+      height: 100px;
+      top: -32px;
+      left: 0px;
+    }
+  }
+
+  @media (min-width: $laptop-width) {
+    padding-left: 154px;
+    margin-bottom: 63px;
   }
 
   &::after {
@@ -82,8 +100,17 @@
     @media (min-width: $tablet-width) {
       width: 140px;
       height: 194px;
+
       top: 12px;
       left: 425px;
+    }
+
+    @media (min-width: $laptop-width) {
+      width: 70px;
+      height: 97px;
+
+      top: -35px;
+      left: 20px;
     }
   }
 
@@ -101,6 +128,14 @@
 
       top: 64px;
       left: 360px;
+    }
+
+    @media (min-width: $laptop-width) {
+      width: 134px;
+      height: 56px;
+
+      top: -10px;
+      left: -18px;
     }
   }
 
@@ -121,10 +156,16 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 48px;
+    padding-right: 300px;
 
     font-size: 16px;
     line-height: 150%;
     color: #000000;
+  }
+
+  @media (min-width: $laptop-width) {
+    margin-bottom: 25px;
+    padding-right: 0;
   }
 }
 
@@ -154,6 +195,9 @@
 
     background-image: url(../../img/arrow.svg);
 
+    @media (min-width: $laptop-width) {
+      top: 10px;
+    }
   }
 
   @media (min-width: $tablet-width) {

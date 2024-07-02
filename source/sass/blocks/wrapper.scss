@@ -32,8 +32,10 @@
 .wrapper--example {
   @media (min-width: $laptop-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 193px;
+    grid-template-columns: 36% 1fr;
+    column-gap: 160px;
+
+    padding-bottom: 30px;
   }
 }
 
@@ -46,6 +48,18 @@
     justify-content: space-between;
 
     padding: 56px 70px;
+    margin: 0;
+
+    background-color: #fff;
+  }
+
+  @media (min-width: $laptop-width) {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    z-index: 1;
+    width: 565px;
+    padding: 59px 80px 56px;
   }
 }
 

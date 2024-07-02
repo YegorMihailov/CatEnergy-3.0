@@ -58,6 +58,10 @@
     padding-right: 51px;
   }
 
+  @media (min-width: $laptop-width) {
+    padding-right: 5px;
+  }
+
   &::before {
     content: '';
     position: absolute;

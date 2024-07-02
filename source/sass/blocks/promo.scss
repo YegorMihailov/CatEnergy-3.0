@@ -1,5 +1,8 @@
 .promo {
+  position: relative;
+
   padding-top: 27px;
+  margin-bottom: 20px;
 
   color: #ffffff;
   background-color: #63a63b;
@@ -26,6 +29,23 @@
 
   @media (min-width: $laptop-width) {
     text-align: left;
+    padding-top: 70px;
+    margin-bottom: -237px;
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: -120px;
+      right: 10px;
+      width: 720px;
+      height: 694px;
+
+      background-color: #63a73b;
+      background-image: url(../../img/promo-cat-large.jpg);
+      background-repeat: no-repeat;
+      background-position: 0px -10px;
+      z-index: -2;
+    }
   }
 }
 
@@ -84,6 +104,13 @@
     width: 709px;
     height: 609px;
     z-index: -1;
+  }
+
+  @media (min-width: $laptop-width) {
+    width: 552px;
+    height: 499px;
+    top: -65px;
+    left: 460px;
   }
 }
 
