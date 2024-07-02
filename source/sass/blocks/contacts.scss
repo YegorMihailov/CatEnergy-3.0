@@ -1,8 +1,11 @@
 .contacts {
-
+  width: 100%;
+  position: relative;
 }
 
 .contacts__title {
+  margin: 0;
+
   font-size: 16px;
   line-height: 125%;
   text-transform: uppercase;
@@ -15,6 +18,8 @@
 }
 
 .contacts__address {
+  margin: 0;
+
   font-family: $additional-font;
   font-size: 14px;
   line-height: 143%;
@@ -29,4 +34,6 @@
 
 
 
-// .contacts__map
+.contacts__map {
+  margin: 0 auto;
+}

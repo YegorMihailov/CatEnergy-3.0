@@ -1,0 +1,20 @@
+.map {
+  max-width: 1440px;
+
+  position:relative;
+  overflow:hidden;
+  margin: 0 auto;
+
+  & iframe {
+    display: block;
+
+    width:100%;
+    max-width: 1440px;
+    height: 362px;
+    margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      height: 400px;
+    }
+  }
+}

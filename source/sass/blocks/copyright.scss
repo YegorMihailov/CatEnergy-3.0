@@ -1,8 +1,25 @@
 
-.copyright {}
+.copyright {
+}
 
 .copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   font-size: 16px;
   font-family: $additional-font;
   color: #444444;
+
+  &:hover .copyright__image {
+    color: #68B738;
+  }
+
+  &:active .copyright__image {
+    color: #68B738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
