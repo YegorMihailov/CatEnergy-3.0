@@ -1,9 +1,20 @@
 .advantages {
   padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 62px;
+  }
 }
 
 
-// .advantages__title
+.advantages__title {
+  margin-top: 45px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
+
+}
 
 
 .advantages__list {
@@ -13,13 +24,12 @@
   font-family: $additional-font;
 
   @media (min-width: $tablet-width) {
-    width: 630px;
     padding: 0;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 135px;
-    row-gap: 37px;
+    column-gap: 115px;
+    row-gap: 137px;
   }
 
   @media (min-width: $laptop-width) {
@@ -36,6 +46,18 @@
   margin-bottom: 20px;
   padding-left: 80px;
 
+  @media (max-width: $mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-top: 106px;
+    padding-right: 51px;
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -45,45 +67,65 @@
     height: 60px;
 
     background-color: #68B738;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
   }
 
-  &::after {
-    content: '';
-    position: absolute;
+  @media (min-width: $tablet-width) {
+    &::after {
+      position: absolute;
+      top: -40px;
+      left: 115px;
 
-    background-repeat: no-repeat;
+      color: #f2f2f2;
+      font-size: 280px;
+      font-family: $main-font;
+      line-height: 1;
+      z-index: -1;
+    }
+
+    &--leaf::after {
+      content: '1';
+    }
+
+    &--tub::after {
+      content: '2';
+    }
+
+    &--eat::after {
+      content: '3';
+    }
+
+    &--alarm::after {
+      content: '4';
+    }
   }
 
-  &--leaf::after {
-    top: 15px;
-    left: 17px;
-    width: 30px;
-    height: 32px;
+  &--leaf::before {
     background-image: url(../../img/leaf.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
 
-  &--tub::after {
-    top: 15px;
-    left: 15px;
-    width: 29px;
-    height: 31px;
+  &--tub::before {
     background-image: url(../../img/tub.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
 
-  &--eat::after {
-    top: 15px;
-    left: 16px;
-    width: 25px;
-    height: 30px;
+  &--eat::before {
     background-image: url(../../img/eat.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
 
-  &--alarm::after {
-    top: 13px;
-    left: 13px;
-    width: 32px;
-    height: 33px;
+  &--alarm::before {
     background-image: url(../../img/alarm.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
 }
 

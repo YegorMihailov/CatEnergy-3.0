@@ -2,21 +2,31 @@
   padding-bottom: 40px;
 
   background-color: #eaeaea;
+  border-top: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(to top, #ebebeb 462px, #ffffff 462px);
+  }
 
   @media (min-width: $tablet-width) {
     padding: 20px 0;
   }
 }
 
+.example__info-wrapper {
+  margin-bottom: 80px;
+}
+
 .example__title {
   margin-top: 0;
-  padding-top: 25px;
+  padding-top: 15px;
 
   font-size: 24px;
   line-height: 100%;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    margin-bottom: 63px;
   }
 }
 
@@ -28,6 +38,7 @@
 
   border: 1px solid #cdcdcd;
   text-align: center;
+  border-radius: 4px;
 }
 
 .example__term {
@@ -44,8 +55,11 @@
 }
 
 
-// .example__text {
-// }
+.example__text {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
+}
 
 
 .example__list {
@@ -53,6 +67,11 @@
   grid-template-columns: 1fr 1fr;
   gap: 32px;
   margin-bottom: 48px;
+
+  @media (min-width: $tablet-width) {
+    width: 366px;
+    gap: 42px;
+  }
 }
 
 .example__definition {
@@ -66,6 +85,17 @@
   font-family: $additional-font;
   text-transform: lowercase;
   background-color: #eaeaea;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    margin-bottom: -8px;
+    padding: 0 8px;
+
+    font-size: 14px;
+    background-color: #fff;
+
+  }
 }
 
 .example__cost {
@@ -74,16 +104,64 @@
   text-transform: uppercase;
   text-align: center;
 
+  @media (max-width: $mobile-width-only) {
+    br {
+      display: none ;
+    }
+  }
+
   @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-top: 25px;
+
     font-size: 20px;
     line-height: 100%;
+    text-align: right;
   }
+}
+
+.example__stats-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .example__images {
   margin-bottom: 15px;
-  @media (min-width: $laptop-width) {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 52% 1fr;
+    padding: 0 58px;
+    padding-right: 25px;
+    overflow: hidden;
+  }
+}
+
+.example__image {
+  @media (min-width: $tablet-width) {
     display: flex;
+    overflow: hidden;
+
+    & img {
+      max-width: none;
+    }
+
+    &--before img {
+      width: 677px;
+      height: 520px;
+    }
+
+    &--after img {
+      width: 545px;
+      height: 520px;
+    }
+
+    &--after {
+      justify-content: end;
+    }
+  }
+
+  &--active {
+    display: block;
   }
 }
 

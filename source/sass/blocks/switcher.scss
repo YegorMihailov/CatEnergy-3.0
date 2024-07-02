@@ -3,6 +3,13 @@
   display: grid;
   grid-template-columns: 49px 1fr 49px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 592px;
+    grid-template-columns: 50px 1fr 50px;
+    gap: 16px;
+    margin: 0 auto;
+  }
 }
 
 .switcher__toggle {
@@ -15,6 +22,10 @@
   background-color: #fff;
   border: 1px solid #cdcdcd;
   border-radius: 6px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 
   &::after {
     content: '';
@@ -54,6 +65,88 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }
+}
+
+
+.switcher__bar {
+  width: 426px;
+
+  appearance: none;
+  background-color: transparent;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.switcher__bar::-moz-range-thumb {
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  box-sizing: border-box;
+
+  border: 11px solid #fff;
+  border-radius: 50%;
+  background-color: #68b738;
+  box-shadow:
+    0 0 0 1px #cdcdcd,
+    0 1px 3px rgba(#000000, 0.16);
+  cursor: pointer;
+
+  &:hover {
+    box-shadow:
+      0 0 0 1px #cdcdcd,
+      0 2px 4px rgba(#000000, 0.19);
+  }
+
+  &:active {
+    box-shadow:
+      0 0 0 1px #68b738,
+      0 3px 5px rgba(#000000, 0.2);
+  }
+}
+
+.switcher__bar::-webkit-slider-thumb {
+  appearance: none;
+
+  height: 30px;
+  width: 30px;
+  margin-top: -12px;
+  padding: 0;
+  box-sizing: border-box;
+
+  border: 11px solid #ffffff;
+  border-radius: 50%;
+  background-color: #68b738;
+  box-shadow:
+    0 0 0 1px #cdcdcd,
+    0 1px 3px rgba(#000000, 0.16);
+  cursor: pointer;
+
+  &:hover {
+    box-shadow:
+      0 0 0 1px #cdcdcd,
+      0 2px 4px rgba(#000000, 0.19);
+  }
+
+  &:active {
+    box-shadow:
+      0 0 0 1px #68b738,
+      0 3px 5px rgba(#000000, 0.2);
+  }
+}
+
+.switcher__bar::-webkit-slider-runnable-track,
+.switcher__bar::-moz-range-track {
+  height: 8px;
+  background-color: #dcdcdc;
+  border-radius: 6px;
+}
+
+.switcher__bar::-webkit-slider-runnable-track {
+  height: 8px;
+  background-color: #dcdcdc;
+  border-radius: 6px;
 }
 
 // .switcher__button--current

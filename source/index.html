@@ -12,10 +12,8 @@
         <div class="main-nav__bar-wrapper">
           <div class="main-nav__bar">
             <a class="main-nav__logo" href="#">
-              <img src="./img/logo-mobile.svg" width="33" height="37" alt="Магазин «Cat Energy».">
-            </a>
-            <a class="main-nav__main-logo" href="#">
-              <img src="./img/main-logo.svg" width="101" height="18" alt="Магазин «Cat Energy».">
+              <img src="./img/logo-mobile.svg" width="33" height="37" alt="«Cat Energy»">
+              <img class="main-nav__text-logo" src="./img/main-logo.svg" width="101" height="18" aria-hidden="true">
             </a>
             <button class="main-nav__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
@@ -42,10 +40,10 @@
       <h1 class="visually-hidden">Магазин «Cat Energy» - функциональное
         питание для котов</h1>
       <header class="page-main__header promo">
-        <div class="wrapper">
-          <h2 class="promo__title">Функциональное питание для котов</h2>
+        <div class="wrapper wrapper--promo">
+          <h2 class="promo__title">Функциональное <br> питание для котов</h2>
           <p class="promo__text">Занялся собой? Займись котом!</p>
-          <img src="./img/promo-mobile.png" width="280" height="270" alt="Банка куриного корма Cat Energy Pro Курица 500 грамм">
+          <img class="promo__image" src="./img/promo-mobile.png" width="280" height="270" alt="Банка куриного корма Cat Energy Pro Курица 500 грамм">
           <a class="promo__button button" href="form.html"><span>Подобрать программу</span></a>
         </div>
       </header>
@@ -80,7 +78,7 @@
               Замените один-два приема обычной еды на наше функциональное питание.
             </li>
             <li class="advantages__item advantages__item--alarm text">
-              Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+              Уже через месяц наслаждайтесь изменениями к лучшему <br> вашего питомца!
             </li>
           </ul>
         </div>
@@ -90,30 +88,38 @@
           <div class="example__info-wrapper">
             <h2 class="example__title title">Живой пример</h2>
             <p class="example__text text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-            <dl class="example__list">
-              <div class="example__item-wrapper">
-                <dt class="example__term">5 кг</dt>
-                <dd class="example__definition">Снижение веса</dd>
-              </div>
+            <div class="example__stats-wrapper">
+              <dl class="example__list">
+                <div class="example__item-wrapper">
+                  <dt class="example__term">5 кг</dt>
+                  <dd class="example__definition">Снижение веса</dd>
+                </div>
 
-              <div class="example__item-wrapper">
-                <dt class="example__term">60 дней</dt>
-                <dd class="example__definition">Затрачено времени</dd>
-              </div>
+                <div class="example__item-wrapper">
+                  <dt class="example__term">60 дней</dt>
+                  <dd class="example__definition">Затрачено времени</dd>
+                </div>
 
-            </dl>
-            <p class="example__cost">Затраты на питание: 15 000 руб. </p>
+              </dl>
+              <p class="example__cost">Затраты на питание: <br> 15 000 руб. </p>
+            </div>
+
           </div>
 
           <div class="example__images-wrapper">
             <div class="example__images">
-              <img src="./img/cat-fat.png" width="280" height="232" alt="Толстый кот Борис">
-              <!-- <img src="./img/cat-skinny.png" width="243" height="232" alt="Стройный кот Борис"> -->
+              <div class="example__image example__image--before example__image--active">
+                <img src="./img/cat-fat.png" width="280" height="232" alt="Толстый кот Борис">
+              </div>
+              <div class="example__image example__image--after">
+                <img src="./img/cat-skinny.png" width="243" height="232" alt="Стройный кот Борис">
+              </div>
             </div>
 
             <div class="example__switcher switcher">
               <button class="switcher__button switcher__button--current" type="button">Было</button>
               <div class="switcher__toggle"></div>
+              <input class="switcher__bar" type="range" value="50" min="17" max="83">
               <button class="switcher__button" type="button">Стало</button>
             </div>
           </div>

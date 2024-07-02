@@ -56,3 +56,14 @@
     justify-content: space-between;
   }
 }
+
+.wrapper--promo {
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    padding: 526px 90px;
+    padding-right: 0px;
+    padding-top: 0;
+  }
+
+}

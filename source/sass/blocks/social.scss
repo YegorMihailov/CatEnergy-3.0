@@ -11,6 +11,14 @@
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
   // align-self: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding:  10px 0;
+    padding-top: 0px;
+
+    border: none;
+  }
 }
 
 .social__item {
