@@ -1,7 +1,7 @@
 .switcher {
   width: 210px;
   display: grid;
-  grid-template-columns: 49px 1fr 49px;
+  grid-template-columns: 38px 1fr 38px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -31,12 +31,19 @@
     content: '';
     position: absolute;
     top: 3px;
-    left: 5px;
     width: 36px;
     height: 6px;
 
     background-color: #68B738;
     border-radius: 6px;
+  }
+
+  &--before::after {
+    left: 5px;
+  }
+
+  &--after::after {
+    left: 43px;
   }
 }
 

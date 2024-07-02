@@ -1,4 +1,10 @@
-// .nutrition-programs
+.nutrition-programs {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+}
 
 .nutrition-programs__list {
   padding: 0;
@@ -15,19 +21,21 @@
 
 .nutrition-programs__item {
   padding: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 
   background-color: #f2f2f2;
 
-  @media (min-width: $tablet-width) {
-    padding: 72px 53px;
-    padding-right: 315px;
-    padding-bottom: 55px;
+  &:last-child {
+    margin-bottom: 0;
   }
 
   @media (min-width: $tablet-width) {
     padding: 72px 43px;
     padding-bottom: 50px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $laptop-width) {
     margin-bottom: 0;
   }
 }
@@ -90,9 +98,9 @@
   }
 
   &--slim::after {
-    top: -15px;
-    left: 35px;
-    width: 32px;
+    top: -8px;
+    left: 10px;
+    width: 36px;
     height: 50px;
 
     background-image: url(../../img/cat-slim.svg);

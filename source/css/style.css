@@ -131,7 +131,7 @@ a {
 }
 
 .advantages__title {
-  margin-top: 45px;
+  margin-top: 0;
 }
 @media (min-width: 768px) {
   .advantages__title {
@@ -382,17 +382,25 @@ a {
 @media (min-width: 768px) {
   .example {
     padding: 20px 0;
-    background-image: linear-gradient(to top, #ebebeb 430px, #ffffff 430px);
+    padding-bottom: 56px;
+    background-image: linear-gradient(to top, #ebebeb 445px, #ffffff 445px);
   }
 }
 @media (min-width: 1440px) {
   .example {
+    padding-bottom: 20px;
     border-top: none;
+    background-image: linear-gradient(to top, #ebebeb 430px, #ffffff 430px);
   }
 }
 
 .example__info-wrapper {
-  margin-bottom: 80px;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .example__info-wrapper {
+    margin-bottom: 80px;
+  }
 }
 @media (min-width: 1440px) {
   .example__info-wrapper {
@@ -496,10 +504,15 @@ a {
 }
 
 .example__cost {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 143%;
   text-transform: uppercase;
   text-align: center;
+}
+.example__cost br {
+  display: none;
 }
 @media (min-width: 768px) {
   .example__cost {
@@ -527,7 +540,13 @@ a {
 
 .example__stats-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .example__stats-wrapper {
+    flex-direction: row;
+  }
 }
 @media (min-width: 1440px) {
   .example__stats-wrapper {
@@ -559,6 +578,9 @@ a {
   }
 }
 
+.example__image--after {
+  display: none;
+}
 @media (min-width: 768px) {
   .example__image {
     display: flex;
@@ -888,6 +910,15 @@ a {
   justify-self: center;
 }
 
+.nutrition-programs {
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .nutrition-programs {
+    margin-bottom: 45px;
+  }
+}
+
 .nutrition-programs__list {
   padding: 0;
   margin: 0;
@@ -903,20 +934,21 @@ a {
 
 .nutrition-programs__item {
   padding: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   background-color: #f2f2f2;
 }
-@media (min-width: 768px) {
-  .nutrition-programs__item {
-    padding: 72px 53px;
-    padding-right: 315px;
-    padding-bottom: 55px;
-  }
+.nutrition-programs__item:last-child {
+  margin-bottom: 0;
 }
 @media (min-width: 768px) {
   .nutrition-programs__item {
     padding: 72px 43px;
     padding-bottom: 50px;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .nutrition-programs__item {
     margin-bottom: 0;
   }
 }
@@ -979,9 +1011,9 @@ a {
   background-size: contain;
 }
 .nutrition-programs__title--slim::after {
-  top: -15px;
-  left: 35px;
-  width: 32px;
+  top: -8px;
+  left: 10px;
+  width: 36px;
   height: 50px;
   background-image: url(../../img/cat-slim.svg);
 }
@@ -1308,7 +1340,7 @@ a {
 .switcher {
   width: 210px;
   display: grid;
-  grid-template-columns: 49px 1fr 49px;
+  grid-template-columns: 38px 1fr 38px;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
@@ -1339,11 +1371,16 @@ a {
   content: "";
   position: absolute;
   top: 3px;
-  left: 5px;
   width: 36px;
   height: 6px;
   background-color: #68B738;
   border-radius: 6px;
+}
+.switcher__toggle--before::after {
+  left: 5px;
+}
+.switcher__toggle--after::after {
+  left: 43px;
 }
 
 .switcher__button {
