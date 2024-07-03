@@ -245,6 +245,7 @@ a {
 }
 
 .button {
+  width: 100%;
   padding: 12px 10px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
@@ -261,13 +262,34 @@ a {
   opacity: 0.3;
 }
 
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "img link" "img list" "button button";
+  padding-top: 20px;
+  margin-bottom: 25px;
+  border-top: 1px solid #d9d9d9;
+}
 @media (min-width: 768px) {
   .card {
     background-color: #f2f2f2;
   }
 }
 
+.card__link {
+  grid-area: link;
+  padding-right: 65px;
+}
+
+.card__image {
+  grid-area: img;
+  justify-self: center;
+  align-self: center;
+}
+
 .card__title {
+  margin: 0;
+  margin-bottom: 15px;
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
@@ -287,6 +309,13 @@ a {
 }
 
 .card__characteristics {
+  display: grid;
+  grid-area: list;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2px;
+  margin: 0;
+  margin-bottom: 22px;
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 133%;
   color: #444444;
@@ -298,7 +327,13 @@ a {
   }
 }
 
+.card__definition {
+  text-align: right;
+  margin: 0;
+}
+
 .card__button {
+  grid-area: button;
   font-size: 16px;
 }
 
@@ -705,6 +740,9 @@ a {
 .main-nav {
   position: relative;
   text-align: center;
+}
+.main-nav--catalog {
+  border-bottom: 1px solid #d9d9d9;
 }
 @media (min-width: 768px) {
   .main-nav {
@@ -1158,6 +1196,10 @@ a {
   }
 }
 
+.products__title {
+  margin-top: 27px;
+}
+
 .promo {
   position: relative;
   padding-top: 27px;
@@ -1267,11 +1309,37 @@ a {
   }
 }
 
+.show-more {
+  text-align: center;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  padding-top: 68px;
+  padding-bottom: 25px;
+}
+
 .show-more__title {
+  position: relative;
+  margin-bottom: 8px;
   font-size: 16px;
   line-height: 125%;
   text-transform: uppercase;
   color: #111;
+}
+.show-more__title::before, .show-more__title::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #d3d3d3;
+}
+.show-more__title::before {
+  top: -40px;
+  left: 125px;
+}
+.show-more__title::after {
+  top: -40px;
+  left: 125px;
+  transform: rotate(90deg);
 }
 @media (min-width: 768px) {
   .show-more__title {
@@ -1281,6 +1349,9 @@ a {
 }
 
 .show-more__text {
+  margin: 0;
+  margin-bottom: 21px;
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 133%;
   color: #444444;

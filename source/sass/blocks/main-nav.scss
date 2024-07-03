@@ -3,6 +3,11 @@
 
   text-align: center;
 
+  &--catalog {
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 174px 1fr;

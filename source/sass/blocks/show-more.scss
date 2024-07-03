@@ -1,12 +1,40 @@
 .show-more {
-  
+  text-align: center;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+
+  padding-top: 68px;
+  padding-bottom: 25px;
 }
 
 .show-more__title {
+  position: relative;
+  margin-bottom: 8px;
+
   font-size: 16px;
   line-height: 125%;
   text-transform: uppercase;
   color: #111;
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+
+    background-color: #d3d3d3;
+  }
+
+  &::before {
+    top: -40px;
+    left: 125px;
+  }
+
+  &::after {
+    top: -40px;
+    left: 125px;
+    transform: rotate(90deg);
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -15,6 +43,10 @@
 }
 
 .show-more__text {
+  margin: 0;
+  margin-bottom: 21px;
+
+  font-family: $additional-font;
   font-size: 12px;
   line-height: 133%;
   color: #444444;
