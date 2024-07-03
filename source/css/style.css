@@ -92,12 +92,26 @@ a {
   }
 }
 
+.additional-products__title {
+  margin-top: 25px;
+  margin-bottom: 36px;
+}
+
 .additional-products__list {
   padding: 0;
   list-style: none;
 }
 
+.additional-products__item {
+  padding-bottom: 19px;
+  border-top: 1px solid #d9d9d9;
+}
+.additional-products__item:last-child {
+  border-bottom: 1px solid #d9d9d9;
+}
+
 .additional-products__item-title {
+  margin: 13px 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
@@ -111,6 +125,11 @@ a {
 }
 
 .additional-products__characteristics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+  margin-bottom: 15px;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 100%;
   color: #444444;
@@ -119,6 +138,11 @@ a {
   .additional-products__characteristics {
     font-size: 16px;
   }
+}
+
+.additional-products__definition {
+  margin: 0;
+  text-align: right;
 }
 
 .advantages {
@@ -340,6 +364,9 @@ a {
 .contacts {
   width: 100%;
   position: relative;
+}
+.contacts--gray {
+  background-color: #f2f2f2;
 }
 
 .contacts__title {
@@ -1159,7 +1186,8 @@ a {
 }
 
 .offer {
-  padding: 40px;
+  padding: 186px 61px 43px 58px;
+  margin-bottom: 35px;
   color: #ffffff;
   background-image: url(../../img/cat-bag.jpg);
   background-color: #68B738;
@@ -1172,9 +1200,10 @@ a {
 }
 
 .offer__text {
+  margin: 0;
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 125%;
-  background-color: #68B738;
 }
 
 .products__list {
