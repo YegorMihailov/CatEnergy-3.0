@@ -490,6 +490,9 @@ a {
     line-height: 100%;
   }
 }
+.card__term {
+  height: min-content;
+}
 @media (min-width: 768px) {
   .card__term {
     padding-bottom: 8px;
@@ -498,6 +501,7 @@ a {
   }
 }
 .card__definition {
+  height: min-content;
   text-align: right;
   margin: 0;
 }
@@ -1356,6 +1360,7 @@ a {
   background-image: url(../../img/gift.svg), url(../../img/cat-bag.jpg);
   background-repeat: no-repeat;
   background-color: #68B738;
+  background-position: 95px 58px, 0 0;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -1385,11 +1390,16 @@ a {
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 125%;
-  text-align: left;
+  text-align: center;
 }
 @media (max-width: 767px) {
   .offer__text br {
     display: none;
+  }
+}
+@media (min-width: 768px) {
+  .offer__text {
+    text-align: left;
   }
 }
 @media (min-width: 1440px) {
@@ -1914,6 +1924,11 @@ a {
 
 .wrapper--gray {
   background-color: #f2f2f2;
+}
+@media (min-width: 1440px) {
+  .wrapper--gray {
+    background-color: #fff;
+  }
 }
 
 @media (min-width: 768px) {

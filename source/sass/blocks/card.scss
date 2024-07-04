@@ -99,6 +99,7 @@
 }
 
 .card__term {
+  height: min-content;
   @media (min-width: $tablet-width) {
     padding-bottom: 8px;
     margin-bottom: 5px;
@@ -112,6 +113,8 @@
 }
 
 .card__definition {
+  height: min-content;
+
   text-align: right;
 
   margin: 0;

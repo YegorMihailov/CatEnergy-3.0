@@ -74,6 +74,10 @@
 
 .wrapper--gray {
   background-color: #f2f2f2;
+
+  @media (min-width: $laptop-width) {
+    background-color: #fff;
+  }
 }
 
 .wrapper--footer {

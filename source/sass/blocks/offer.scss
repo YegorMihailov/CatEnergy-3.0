@@ -6,6 +6,7 @@
   background-image: url(../../img/gift.svg), url(../../img/cat-bag.jpg);
   background-repeat: no-repeat;
   background-color: #68B738;
+  background-position: 95px 58px, 0 0;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -38,12 +39,16 @@
   font-family: $additional-font;
   font-size: 16px;
   line-height: 125%;
-  text-align: left;
+  text-align: center;
 
   @media (max-width: $mobile-width-only) {
     & br {
       display: none;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
   }
 
   @media (min-width: $laptop-width) {
