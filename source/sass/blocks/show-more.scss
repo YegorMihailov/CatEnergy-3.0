@@ -5,6 +5,13 @@
 
   padding-top: 68px;
   padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 101px 37px 25px;
+    padding-bottom: 0;
+
+    border: 2px solid #f2f2f2;
+  }
 }
 
 .show-more__title {
@@ -23,6 +30,10 @@
     height: 2px;
 
     background-color: #d3d3d3;
+
+    @media (min-width: $tablet-width) {
+      width: 60px;
+    }
   }
 
   &::before {

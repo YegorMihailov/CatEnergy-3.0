@@ -29,6 +29,10 @@
 
 }
 
+.wrapper--additional-products {
+  display: grid;
+}
+
 .wrapper--example {
   @media (min-width: $laptop-width) {
     display: grid;
@@ -40,17 +44,16 @@
 }
 
 .wrapper--contacts {
+  width: 100%;
   display: grid;
   grid-template-columns: 139px 139px;
-  padding: 24px 0;
+  padding: 26px 20px;
   @media (min-width: $tablet-width) {
     grid-template-columns: 172px 172px;
     justify-content: space-between;
 
-    padding: 56px 70px;
-    margin: 0;
-
-    background-color: #fff;
+    padding: 55px 70px;
+    margin: 0 auto;
   }
 
   @media (min-width: $laptop-width) {
