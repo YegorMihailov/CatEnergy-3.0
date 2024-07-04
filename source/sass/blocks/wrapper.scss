@@ -31,6 +31,10 @@
 
 .wrapper--additional-products {
   display: grid;
+
+  @media (min-width: $laptop-width) {
+    margin-bottom: 85px;
+  }
 }
 
 .wrapper--example {
@@ -48,6 +52,8 @@
   display: grid;
   grid-template-columns: 139px 139px;
   padding: 26px 20px;
+
+  background-color: #fff;
   @media (min-width: $tablet-width) {
     grid-template-columns: 172px 172px;
     justify-content: space-between;
@@ -64,6 +70,10 @@
     width: 565px;
     padding: 59px 80px 56px;
   }
+}
+
+.wrapper--gray {
+  background-color: #f2f2f2;
 }
 
 .wrapper--footer {

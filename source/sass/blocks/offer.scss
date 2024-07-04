@@ -3,7 +3,7 @@
   margin-bottom: 35px;
 
   color: #ffffff;
-  background-image: url(../../img/cat-bag.jpg);
+  background-image: url(../../img/gift.svg), url(../../img/cat-bag.jpg);
   background-repeat: no-repeat;
   background-color: #68B738;
   text-align: center;
@@ -17,6 +17,18 @@
     background-image: url(../../img/gift.svg), url(../../img/cat-bag-large.jpg);
     background-size: auto, cover;
     background-position: 77px 57px, 0 0 ;
+  }
+
+  @media (min-width: $laptop-width) {
+    grid-column: auto;
+
+    padding: 42px;
+    padding-top: 184px;
+    margin-bottom: 0;
+
+    background-image: url(../../img/gift.svg), url(../../img/cat-bag.jpg);
+    background-position: 80px 55px, -32px 0;
+    background-size: auto, cover;
   }
 }
 
@@ -32,5 +44,9 @@
     & br {
       display: none;
     }
+  }
+
+  @media (min-width: $laptop-width) {
+    text-align: center;
   }
 }
