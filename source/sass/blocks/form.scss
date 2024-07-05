@@ -85,8 +85,11 @@
 }
 
 .form__footer {
-  display: grid;
-  grid-template-columns: 282px 1fr;
-  gap: 60px;
-  align-items: center;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 282px 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+
 }
