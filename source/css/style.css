@@ -640,7 +640,7 @@ a {
   .control--radio .control__input:checked + .control__caption::after {
     width: 18px;
     height: 18px;
-    top: 3.5px;
+    top: 4px;
     left: -34px;
   }
 }
@@ -921,9 +921,22 @@ a {
   padding: 0 17px;
   border: none;
 }
+.field-group:last-of-type {
+  margin-bottom: 34px;
+}
 @media (min-width: 1440px) {
   .field-group--contacts, .field-group--comment, .field-group--additional {
     grid-column: 1/-1;
+  }
+}
+@media (min-width: 1440px) {
+  .field-group--contacts .field-group__item {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .field-group--contacts {
+    margin-bottom: 65px;
   }
 }
 @media (min-width: 768px) {
@@ -942,8 +955,10 @@ a {
     padding: 25px;
   }
 }
-.field-group:last-of-type {
-  margin-bottom: 34px;
+@media (min-width: 1440px) {
+  .field-group--radio .field-group__item {
+    margin-bottom: 25px;
+  }
 }
 @media (min-width: 768px) {
   .field-group--contacts .field-group__title, .field-group--comment .field-group__title {
@@ -954,12 +969,26 @@ a {
   margin-bottom: 57px;
 }
 
+@media (min-width: 1440px) {
+  .field-group__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
+
 .field-group + .field-group {
   margin-top: 25px;
 }
 @media (min-width: 768px) {
   .field-group + .field-group {
     margin-top: 70px;
+  }
+}
+@media (min-width: 1440px) {
+  .field-group + .field-group {
+    margin-top: 0;
+    margin-bottom: 65px;
   }
 }
 
@@ -979,13 +1008,20 @@ a {
 @media (min-width: 1440px) {
   .field-group__list--additional {
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 104px;
+    column-gap: 20px;
   }
 }
 @media (min-width: 768px) {
   .field-group__list--contacts {
     display: flex;
     flex-direction: column;
+  }
+}
+@media (min-width: 1440px) {
+  .field-group__list--contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 78px;
   }
 }
 
@@ -996,6 +1032,11 @@ a {
   margin-bottom: 0;
 }
 @media (min-width: 768px) {
+  .field-group__item {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 1440px) {
   .field-group__item {
     margin-bottom: 20px;
   }
@@ -1085,6 +1126,12 @@ a {
     padding-bottom: 72px;
   }
 }
+@media (min-width: 1440px) {
+  .form {
+    padding: 0 80px;
+    padding-bottom: 82px;
+  }
+}
 
 .form__title {
   margin: 0;
@@ -1106,14 +1153,6 @@ a {
   .form__subtitle {
     font-size: 20px;
     line-height: 150%;
-  }
-}
-
-@media (min-width: 1440px) {
-  .form__body {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 80px;
   }
 }
 
@@ -1141,7 +1180,7 @@ a {
 }
 @media (min-width: 768px) {
   .form__button-wrapper {
-    width: 282px;
+    width: 100%;
     margin-bottom: 0;
   }
 }
@@ -1156,24 +1195,38 @@ a {
 }
 @media (min-width: 768px) {
   .form__explanation {
+    width: 100%;
     font-size: 16px;
   }
 }
+@media (min-width: 1440px) {
+  .form__explanation {
+    width: auto;
+  }
+}
 
+.form__footer {
+  width: 286px;
+  margin: 0 auto;
+}
 @media (min-width: 768px) {
   .form__footer {
+    width: 100%;
     display: grid;
     grid-template-columns: 282px 1fr;
-    gap: 60px;
+    gap: 80px;
     align-items: center;
+  }
+}
+@media (min-width: 1440px) {
+  .form__footer {
+    grid-template-columns: 568px 1fr;
   }
 }
 
 .main-nav {
   position: relative;
   text-align: center;
-}
-.main-nav--catalog {
   border-bottom: 1px solid #d9d9d9;
 }
 .main-nav--catalog .main-nav__link {
@@ -1183,6 +1236,14 @@ a {
   .main-nav--catalog {
     border: none;
   }
+}
+@media (min-width: 1440px) {
+  .main-nav--index .main-nav__item--current::after {
+    background-color: #ffffff;
+  }
+}
+.main-nav--index {
+  border: none;
 }
 @media (min-width: 768px) {
   .main-nav {
@@ -1198,7 +1259,7 @@ a {
     grid-template-columns: 202px 1fr;
     width: auto;
     margin-top: 0;
-    padding: 0 110px;
+    padding: 0 80px;
   }
 }
 
@@ -1320,10 +1381,22 @@ a {
   .main-nav__item {
     border-bottom: 1px solid #e6e6e6;
   }
-  .main-nav__item--current {
-    border-top: 1px solid #e6e6e6;
+}
+.main-nav__item--current {
+  position: relative;
+}
+@media (min-width: 768px) {
+  .main-nav__item--current::after {
+    content: "";
+    position: absolute;
+    bottom: 12px;
+    right: 17px;
+    left: 17px;
+    height: 2px;
+    background-color: #68B738;
   }
 }
+
 @media (max-width: 767px) {
   .main-nav__item a {
     position: relative;

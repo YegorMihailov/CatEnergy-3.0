@@ -23,13 +23,13 @@
 
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--current">
+            <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--current">
               <a class="main-nav__link" href="#">Подбор программы</a>
             </li>
           </ul>
@@ -45,57 +45,59 @@
             программу питания для вашего кота</p>
           </div>
           <form class="form__body" action="https:/echo.htmlacademy.ru" method="post">
-            <fieldset class="form__group field-group">
-              <legend class="visually-hidden">Данные кота</legend>
+            <div class="field-group__wrapper">
+              <fieldset class="form__group field-group">
+                <legend class="visually-hidden">Данные кота</legend>
 
-              <ul class="field-group__list">
-                <li class="field-group__item">
-                  <label class="field">
-                    <span class="field__caption">Имя:<sup>*</sup></span>
-                    <input class="field__input" type="text" name="name" placeholder="Барсик">
-                  </label>
-                </li>
-                <li class="field-group__item">
-                  <label class="field">
-                    <span class="field__caption">Вес (кг):<sup>*</sup></span>
-                    <input class="field__input" type="text" name="weight" placeholder="7">
-                  </label>
-                </li>
-                <li class="field-group__item">
-                  <label class="field">
-                    <span class="field__caption">Возраст (лет):<sup>*</sup></span>
-                    <input class="field__input" type="text" name="age" placeholder="7">
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
+                <ul class="field-group__list">
+                  <li class="field-group__item">
+                    <label class="field">
+                      <span class="field__caption">Имя:<sup>*</sup></span>
+                      <input class="field__input" type="text" name="name" placeholder="Барсик">
+                    </label>
+                  </li>
+                  <li class="field-group__item">
+                    <label class="field">
+                      <span class="field__caption">Вес (кг):<sup>*</sup></span>
+                      <input class="field__input" type="text" name="weight" placeholder="7">
+                    </label>
+                  </li>
+                  <li class="field-group__item">
+                    <label class="field">
+                      <span class="field__caption">Возраст (лет):<sup>*</sup></span>
+                      <input class="field__input" type="text" name="age" placeholder="7">
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
 
-            <fieldset class="form__group field-group field-group--radio">
-              <legend class="visually-hidden">Цель программы</legend>
+              <fieldset class="form__group field-group field-group--radio">
+                <legend class="visually-hidden">Цель программы</legend>
 
-              <ul class="field-group__list">
-                <li class="field-group__item">
-                  <label class="control control--radio">
-                    <input class="control__input  control__input--radio" type="radio" name="program" value="cut" checked>
-                    <span class="control__caption">Похудение</span>
-                  </label>
-                </li>
+                <ul class="field-group__list">
+                  <li class="field-group__item">
+                    <label class="control control--radio">
+                      <input class="control__input  control__input--radio" type="radio" name="program" value="cut" checked>
+                      <span class="control__caption">Похудение</span>
+                    </label>
+                  </li>
 
-                <li class="field-group__item">
-                  <label class="control control--radio">
-                    <input class="control__input  control__input--radio" type="radio" name="program" value="bulk">
-                    <span class="control__caption">Набор массы</span>
-                  </label>
-                </li>
+                  <li class="field-group__item">
+                    <label class="control control--radio">
+                      <input class="control__input  control__input--radio" type="radio" name="program" value="bulk">
+                      <span class="control__caption">Набор массы</span>
+                    </label>
+                  </li>
 
-                <li class="field-group__item">
-                  <label class="control control--radio">
-                    <input class="control__input control__input--radio" type="radio" name="program" value="advice">
-                    <span class="control__caption">Не знаю (Нужен ваш совет)</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
+                  <li class="field-group__item">
+                    <label class="control control--radio">
+                      <input class="control__input control__input--radio" type="radio" name="program" value="advice">
+                      <span class="control__caption">Не знаю (Нужен ваш совет)</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
 
             <fieldset class="form__group field-group field-group--contacts">
               <legend class="field-group__title title title__small">
