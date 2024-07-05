@@ -2,7 +2,7 @@
   width: 280px;
   margin: auto;
 
-  &--grey {
+  &--gray {
     background-color: #f2f2f2;
   }
 
@@ -96,5 +96,10 @@
     padding-right: 0px;
     padding-top: 0;
   }
+}
 
+.wrapper--form {
+  width: 100%;
+
+  padding-top: 27px;
 }

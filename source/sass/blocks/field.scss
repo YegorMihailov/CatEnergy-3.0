@@ -1,4 +1,14 @@
-// .field
+.field {
+  position: relative;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 14px;
+  align-items: center;
+
+  &--comment {
+    display: block;
+  }
+}
 
 .field__caption {
   font-size: 16px;
@@ -14,7 +24,18 @@
 .field__input {
   padding: 13px 13px 13px 15px;
 
-  font-family: $main-font;
+  border: 1px solid #e6e6e6;
+  font-family: inherit;
+  font-size: 16px;
+
+  &:focus {
+    outline: none;
+    outline: 2px solid #444444;
+  }
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
 
   &::placeholder {
     font-size: 16px;
@@ -27,13 +48,27 @@
     }
   }
 
-  // &--comment {
-  //   display: block;
-  // }
+  &--comment {
+    width: 100%;
+  }
+}
+
+.field__icon {
+  position: absolute;
+
+  &--email {
+    right: 20px;
+  }
+
+  &--tel {
+    right: 18px;
+  }
 }
 
 
 
-// .field__input--email
+.field__input--email {
+
+}
 
 // .field__input--tel
