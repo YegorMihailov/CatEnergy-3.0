@@ -185,26 +185,36 @@
   text-transform: uppercase;
   color: #000000;
 
-  &:hover {
-    opacity: 0.3;
-
-    &::after {
-      width: 32px;
-    }
-  }
-
   &::after {
     content: '';
     position: absolute;
-    top: 6px;
+    top: 8px;
     right: -36px;
     width: 24px;
     height: 12px;
 
     background-image: url(../../img/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    // transition: linear 0.3s;
 
     @media (min-width: $laptop-width) {
       top: 10px;
+    }
+  }
+
+  &:hover {
+    &::after {
+      width: 34px;
+      right: -44px;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+    &::after {
+      width: 34px;
+      right: -44px;
     }
   }
 

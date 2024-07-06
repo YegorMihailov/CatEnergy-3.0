@@ -1,14 +1,17 @@
 .form {
   padding-bottom: 32px;
+  max-width: 1220px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 35px;
+    padding: 0 30px;
     padding-bottom: 72px;
+    margin: 0 auto;
   }
 
   @media (min-width: $laptop-width) {
-    padding: 0 80px;
+    padding: 0;
     padding-bottom: 82px;
+
   }
 }
 

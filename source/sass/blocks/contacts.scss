@@ -6,6 +6,10 @@
   &--gray {
     background-color: #f2f2f2;
   }
+
+  @media (min-width: $laptop-width) {
+    margin: 0 auto;
+  }
 }
 
 .contacts__title {

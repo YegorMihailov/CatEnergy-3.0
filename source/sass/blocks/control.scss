@@ -3,6 +3,8 @@
   grid-template-columns: 30px 1fr;
   gap: 15px;
   align-items: center;
+
+
 }
 
 
@@ -31,6 +33,7 @@
     content: '';
     position: absolute;
     display: inline-block;
+
   }
 
   &::before {
