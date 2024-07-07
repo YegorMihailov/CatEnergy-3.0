@@ -1,22 +1,48 @@
 .main-nav {
   position: relative;
+  max-width: 1220px;
 
   text-align: center;
+
+  border-bottom: 1px solid #d9d9d9;
+
+  &--catalog {
+
+
+    & .main-nav__link {
+      color: #111111;
+    }
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
+  }
+
+  &--index .main-nav__item--current::after {
+    @media (min-width: $laptop-width) {
+      background-color: #ffffff;
+    }
+
+  }
+
+  &--index {
+    border: none;
+  }
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 174px 1fr;
 
-    width: 708px;
+    width: 100%;
     margin: 0 auto;
-    margin-top: 7px;
+    padding: 0 30px;
   }
 
   @media (min-width: $laptop-width) {
     grid-template-columns: 202px 1fr;
     width: auto;
     margin-top: 0;
-    padding: 0 110px;
+    padding: 0;
   }
 }
 
@@ -78,7 +104,7 @@
     justify-content: flex-end;
 
     margin: 0;
-    margin-top: 10px;
+    margin-top: 12px;
 
     font-size: 18px;
     font-weight: normal;
@@ -147,28 +173,50 @@
 
 .main-nav__item {
   position: relative;
+
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 17px;
   }
 
-
   @media (max-width: $mobile-width-only) {
     border-bottom: 1px solid #e6e6e6;
 
-    &--current {
+    &:first-child {
       border-top: 1px solid #e6e6e6;
     }
   }
 
   &--current {
-    @media (min-width: $tablet-width) {
-      // border-bottom: 2px solid #68B738;
+    cursor: default;
+    &:hover {
+      opacity: 1;
+    }
 
-      // &::after {
-      //   content: '';
-      //   position: absolute;
-      //   width: ;
-      // }
+    & a {
+      cursor: default;
+    }
+
+    @media (min-width: $tablet-width) {
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 12px;
+        right: 17px;
+        left: 17px;
+        height: 2px;
+
+        background-color: #68B738;
+      }
     }
   }
 }
@@ -196,7 +244,7 @@
 .main-nav--opened .main-nav__wrapper {
   @media (max-width: $mobile-width-only) {
     position: absolute;
-    top: 62px;
+    top: 67px;
 
     background-color: #fff;
     z-index: 1;
@@ -224,6 +272,15 @@
   align-items: center;
   gap: 16px;
   grid-column: 1 / 3;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-width) {
 
     width: 174px;

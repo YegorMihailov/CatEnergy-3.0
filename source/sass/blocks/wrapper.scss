@@ -2,7 +2,7 @@
   width: 280px;
   margin: auto;
 
-  &--grey {
+  &--gray {
     background-color: #f2f2f2;
   }
 
@@ -29,6 +29,14 @@
 
 }
 
+.wrapper--additional-products {
+  display: grid;
+
+  @media (min-width: $laptop-width) {
+    margin-bottom: 85px;
+  }
+}
+
 .wrapper--example {
   @media (min-width: $laptop-width) {
     display: grid;
@@ -40,17 +48,18 @@
 }
 
 .wrapper--contacts {
+  width: 100%;
   display: grid;
   grid-template-columns: 139px 139px;
-  padding: 24px 0;
+  padding: 26px 20px;
+
+  background-color: #fff;
   @media (min-width: $tablet-width) {
     grid-template-columns: 172px 172px;
     justify-content: space-between;
 
-    padding: 56px 70px;
-    margin: 0;
-
-    background-color: #fff;
+    padding: 55px 70px;
+    margin: 0 auto;
   }
 
   @media (min-width: $laptop-width) {
@@ -60,6 +69,14 @@
     z-index: 1;
     width: 565px;
     padding: 59px 80px 56px;
+  }
+}
+
+.wrapper--gray {
+  background-color: #f2f2f2;
+
+  @media (min-width: $laptop-width) {
+    background-color: #fff;
   }
 }
 
@@ -79,5 +96,10 @@
     padding-right: 0px;
     padding-top: 0;
   }
+}
 
+.wrapper--form {
+  width: 100%;
+
+  padding-top: 27px;
 }

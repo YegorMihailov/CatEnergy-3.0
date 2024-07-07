@@ -35,15 +35,18 @@
     &::after {
       position: absolute;
       content: '';
+      min-width: 50%;
       top: -120px;
-      right: 10px;
+      right: 0;
+      bottom: 0;
+      left: 50%;
       width: 720px;
       height: 694px;
 
       background-color: #63a73b;
-      background-image: url(../../img/promo-cat-large.jpg);
+      background-image: url(../../img/promo-cat-big.jpg);
       background-repeat: no-repeat;
-      background-position: 0px -10px;
+      background-position: 0 100%;
       z-index: -2;
     }
   }
