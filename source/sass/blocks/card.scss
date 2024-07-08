@@ -10,7 +10,7 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-rows: 185px auto auto min-content;
+    grid-template-rows: 200px auto;
     grid-template-columns: auto;
     grid-template-areas: 'img' 'link' 'list' 'button';
     padding: 20px 36px 39px;
@@ -31,6 +31,7 @@
   @media (min-width: $tablet-width) {
     padding: 0 47px;
     margin-bottom: 20px;
+    margin-top: 20px;
   }
 
   @media (min-width: $laptop-width) {
@@ -39,12 +40,25 @@
   }
 }
 
-.card__image {
+.card__picture {
   grid-area: img;
   justify-self: center;
   align-self: center;
+  @media (min-width: $tablet-width) {
+    height: min-content;
+    margin-top: auto;
+    justify-self: center;
+  }
+
+
+}
+
+.card__image {
+  justify-self: center;
 
   @media (min-width: $tablet-width) {
+    width: auto;
+    height: auto;
     order: -1;
   }
 }

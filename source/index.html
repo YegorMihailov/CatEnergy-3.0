@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="icon" href="./img/favicons/32.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="/180.png">
+    <link rel="manifest" href="../manifest.webmanifest">
     <title>Магазин «Cat Energy»</title>
   </head>
   <body class="page__body">
@@ -12,7 +16,12 @@
         <div class="main-nav__bar-wrapper">
           <div class="main-nav__bar">
             <a class="main-nav__logo" href="#">
-              <img src="./img/logo-mobile.svg" width="33" height="37" alt="«Cat Energy»">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="./img/logo-laptop.svg">
+                <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
+                <img class="main-nav__image-logo" src="./img/logo-mobile.svg" width="33" height="37" alt="«Cat Energy»">
+              </picture>
+
               <img class="main-nav__text-logo" src="./img/main-logo.svg" width="101" height="18" aria-hidden="true">
             </a>
             <button class="main-nav__toggle" type="button">
@@ -43,7 +52,12 @@
         <div class="wrapper wrapper--promo">
           <h2 class="promo__title">Функциональное <br> питание для котов</h2>
           <p class="promo__text">Занялся собой? Займись котом!</p>
-          <img class="promo__image" src="./img/promo-mobile.png" width="280" height="270" alt="Банка куриного корма Cat Energy Pro Курица 500 грамм">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="./img/promo-laptop.png, img/promo-laptop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="./img/promo-tablet.png, img/promo-tablet@2x.png 2x">
+            <img class="promo__image" src="./img/promo-mobile.png" srcset="./img/promo-mobile@2x.png 2x" width="280" height="270" alt="Банка куриного корма Cat Energy Pro Курица 500 грамм">
+          </picture>
+
           <a class="promo__button button" href="form.html"><span>Подобрать программу</span></a>
         </div>
       </header>
@@ -109,10 +123,17 @@
           <div class="example__images-wrapper">
             <div class="example__images">
               <div class="example__image example__image--before">
-                <img src="./img/cat-fat.png" width="280" height="232" alt="Толстый кот Борис">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="./img/cat-fat-tablet.png, img/cat-fat-tablet@2x.png 2x">
+                  <img src="./img/cat-fat.png" srcset="./img/cat-fat@2x.png 2x" width="280" height="232" alt="Толстый кот Борис">
+                </picture>
+
               </div>
               <div class="example__image example__image--after">
-                <img src="./img/cat-skinny.png" width="243" height="232" alt="Стройный кот Борис">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="./img/cat-skinny-tablet.png, img/cat-skinny-tablet@2x.png 2x">
+                  <img src="./img/cat-skinny.png" srcset="./img/cat-skinny@2x.png 2x" width="243" height="232" alt="Стройный кот Борис">
+                </picture>
               </div>
             </div>
 

@@ -7,10 +7,15 @@
   color: #ffffff;
   background-color: #63a63b;
   // line-height: 100%;
-  background-image: url(../../img/cat-promo.jpg), linear-gradient(#63a63b 0, #63a63b 302px, #fff 302px);
+  background-image: url(../../img/cat-promo.jpg), linear-gradient(#63a63b 0, #63a63b 302px, #ffffff 302px);
   background-repeat: no-repeat;
   background-position: 50% 0;
   text-align: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../../img/cat-promo@2x.jpg), linear-gradient(#63a63b 0, #63a63b 302px, #ffffff 302px);
+    background-size: auto 302px, auto;
+  }
 
   @media (max-width: $mobile-width-only) {
     br {
@@ -44,10 +49,15 @@
       height: 694px;
 
       background-color: #63a73b;
-      background-image: url(../../img/promo-cat-big.jpg);
+      background-image: url(../../img/promo-cat-large.jpg);
       background-repeat: no-repeat;
       background-position: 0 100%;
       z-index: -2;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url(../../img/promo-cat-large@2x.jpg);
+        background-size: auto 696px;
+      }
     }
   }
 }

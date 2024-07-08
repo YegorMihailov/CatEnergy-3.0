@@ -282,9 +282,15 @@
   }
 
   @media (min-width: $tablet-width) {
+    grid-template-columns: 61px 1fr;
 
     width: 174px;
     height: 52px;
+  }
+
+  @media (min-width: $laptop-width) {
+    grid-template-columns: 71px 1fr;
+    width: 202px;
   }
   // margin-right: 20px;
   // padding-top: 20px;
@@ -292,4 +298,16 @@
 
 .main-nav__text-logo {
   justify-self: center;
+}
+
+.main-nav__image-logo {
+  @media (min-width: $tablet-width) {
+    width: 61px;
+    height: 50px;
+  }
+
+  @media (min-width: $laptop-width) {
+    width: 71px;
+    height: 60px;
+  }
 }
