@@ -5,8 +5,16 @@
   gap: 14px;
   align-items: center;
 
+  @media (max-width: $mobile-width-only) {
+    max-width: 280px;
+  }
+
   &--comment {
     display: block;
+
+    @media (min-width: $laptop-width) {
+      margin-bottom: 70px;
+    }
   }
 }
 
@@ -63,6 +71,7 @@
 
   &--comment {
     width: 100%;
+    resize: none;
   }
 }
 

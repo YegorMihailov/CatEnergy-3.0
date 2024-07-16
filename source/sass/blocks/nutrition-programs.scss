@@ -16,6 +16,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
+    row-gap: 40px;
   }
 }
 
@@ -56,6 +57,7 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     margin-top: 0;
+    padding-right: 200px;
   }
 
   &::before {
@@ -87,6 +89,7 @@
   @media (min-width: $laptop-width) {
     padding-left: 154px;
     margin-bottom: 63px;
+    padding-right: 0;
   }
 
   &::after {

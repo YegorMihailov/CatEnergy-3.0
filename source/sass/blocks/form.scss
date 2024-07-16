@@ -1,9 +1,11 @@
 .form {
+  width: 100%;
+  // padding: 0 17px;
   padding-bottom: 32px;
   max-width: 1220px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
+    // padding: 0 30px;
     padding-bottom: 72px;
     margin: 0 auto;
   }
