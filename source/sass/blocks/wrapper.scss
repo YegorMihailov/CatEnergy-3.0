@@ -51,12 +51,12 @@
   width: 100%;
   display: grid;
   grid-template-columns: 139px 139px;
+  justify-content: space-between;
   padding: 26px 20px;
 
   background-color: #fff;
   @media (min-width: $tablet-width) {
     grid-template-columns: 172px 172px;
-    justify-content: space-between;
 
     padding: 55px 70px;
     margin: 0 auto;
@@ -102,4 +102,8 @@
   width: 100%;
 
   padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding: 27px 40px 0;
+  }
 }

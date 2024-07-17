@@ -1076,6 +1076,11 @@ a {
   margin: 0;
   list-style: none;
 }
+@media (max-width: 767px) {
+  .field-group__list {
+    max-width: 100%;
+  }
+}
 @media (min-width: 768px) {
   .field-group__list--additional {
     display: grid;
@@ -1112,11 +1117,6 @@ a {
 .field-group__item:last-child {
   margin-bottom: 0;
 }
-@media (max-width: 767px) {
-  .field-group__item {
-    max-width: 280px;
-  }
-}
 @media (min-width: 768px) {
   .field-group__item {
     margin-bottom: 20px;
@@ -1145,15 +1145,9 @@ a {
 
 .field {
   position: relative;
-  display: grid;
-  grid-template-columns: max-content 1fr;
-  gap: 14px;
+  display: flex;
+  gap: 10px;
   align-items: center;
-}
-@media (max-width: 767px) {
-  .field {
-    max-width: 280px;
-  }
 }
 .field--comment {
   display: block;
@@ -1165,6 +1159,7 @@ a {
 }
 
 .field__caption {
+  width: max-content;
   font-size: 16px;
   line-height: 112%;
   text-transform: uppercase;
@@ -1177,6 +1172,7 @@ a {
 }
 
 .field__input {
+  flex-grow: 1;
   padding: 13px 12px 12px 15px;
   border: 1px solid #e6e6e6;
   font-family: inherit;
@@ -2484,13 +2480,13 @@ a {
   width: 100%;
   display: grid;
   grid-template-columns: 139px 139px;
+  justify-content: space-between;
   padding: 26px 20px;
   background-color: #fff;
 }
 @media (min-width: 768px) {
   .wrapper--contacts {
     grid-template-columns: 172px 172px;
-    justify-content: space-between;
     padding: 55px 70px;
     margin: 0 auto;
   }
@@ -2535,6 +2531,11 @@ a {
 .wrapper--form {
   width: 100%;
   padding-top: 27px;
+}
+@media (min-width: 768px) {
+  .wrapper--form {
+    padding: 27px 40px 0;
+  }
 }
 
 .text {

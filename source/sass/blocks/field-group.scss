@@ -140,6 +140,10 @@
 
   list-style: none;
 
+  @media (max-width: $mobile-width-only) {
+    max-width: 100%;
+  }
+
   &--additional {
     @media (min-width: $tablet-width) {
       display: grid;
@@ -176,10 +180,6 @@
 
   &:last-child {
     margin-bottom: 0;
-  }
-
-  @media (max-width: $mobile-width-only) {
-    max-width: 280px;
   }
 
   @media (min-width: $tablet-width) {
