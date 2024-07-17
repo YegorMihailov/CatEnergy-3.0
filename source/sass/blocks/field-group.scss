@@ -1,4 +1,5 @@
 .field-group {
+  position: relative;
   margin: 0;
   padding: 0 17px;
 
@@ -11,8 +12,50 @@
   &--contacts,
   &--comment,
   &--additional {
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 2px;
+
+      background-color: #68B738;
+      z-index: -1;
+    }
+
     @media (min-width: $laptop-width) {
       grid-column: 1 / -1;
+    }
+  }
+
+  &--contacts {
+    &::before {
+      top: -68px;
+
+      @media (min-width: $tablet-width) {
+        top: -118px;
+      }
+    }
+  }
+
+  &--comment {
+    &::before {
+      top: 15px;
+
+      @media (min-width: $tablet-width) {
+        top: 23px;
+      }
+    }
+  }
+
+  &--additional {
+    &::before {
+      top: -45px;
+
+      @media (min-width: $tablet-width) {
+        top: -71px;
+      }
     }
   }
 
@@ -58,7 +101,10 @@
   }
 
   &--additional .field-group__title {
-    margin-bottom: 57px;
+    @media (min-width: $tablet-width) {
+      margin-bottom: 57px;
+    }
+
   }
 }
 
@@ -67,6 +113,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
+
+    margin-bottom: 70px;
   }
 }
 
@@ -78,9 +126,12 @@
   }
 
   @media (min-width: $laptop-width) {
-    margin-top: 0;
-    margin-bottom: 65px;
+    margin: 0;
   }
+}
+
+.field-group--radio {
+  margin-bottom: 0;
 }
 
 .field-group__list {
@@ -89,12 +140,18 @@
 
   list-style: none;
 
+  @media (max-width: $mobile-width-only) {
+    max-width: 100%;
+  }
+
   &--additional {
     @media (min-width: $tablet-width) {
       display: grid;
       grid-template-columns: 1fr 1fr;
       column-gap: 25px;
       row-gap: 32px;
+
+      margin-bottom: 60px;
     }
 
     @media (min-width: $laptop-width) {
@@ -112,7 +169,8 @@
     @media (min-width: $laptop-width) {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 78px;
+      column-gap: 78px;
+      row-gap: 40px;
     }
   }
 }
@@ -138,5 +196,17 @@
 }
 
 .field-group__title {
+  width: min-content;
+  display: flex;
+  justify-content: start;
   margin-bottom: 35px;
+  padding: 0 15px;
+  margin-left: -16px;
+
+  background-color: #fff;
+
+  @media (min-width: $tablet-width) {
+    // padding-left: 30px;
+    margin-left: 0;
+  }
 }
